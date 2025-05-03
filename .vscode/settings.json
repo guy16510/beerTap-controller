@@ -1,0 +1,8 @@
+{
+    "idf.portWin": "COM7",
+    "files.associations": {
+        "vector": "cpp",
+        "string": "cpp",
+        "utility": "cpp"
+    }
+}

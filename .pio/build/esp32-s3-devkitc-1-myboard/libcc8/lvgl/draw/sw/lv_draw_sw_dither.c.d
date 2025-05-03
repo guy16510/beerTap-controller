@@ -1,0 +1,34 @@
+.pio/build/esp32-s3-devkitc-1-myboard/libcc8/lvgl/draw/sw/lv_draw_sw_dither.c.o: \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/lv_draw_sw_dither.c \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/lv_draw_sw_dither.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../core/lv_obj_pos.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../core/../misc/lv_area.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../core/../misc/../lv_conf_internal.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../core/../misc/../lv_conf_kconfig.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/qspi_opi/include/sdkconfig.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_common/include/esp_attr.h \
+ include/lv_conf.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/heap/include/esp_heap_caps.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/heap/include/multi_heap.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_common/include/esp_err.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_common/include/esp_compiler.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/lv_draw_sw_gradient.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_color.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/../lv_conf_internal.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_assert.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_log.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_types.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_mem.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_math.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_style.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/../font/lv_font.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/../font/../lv_conf_internal.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/../font/lv_symbol_def.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/../font/../misc/lv_area.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_color.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_area.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_anim.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_txt.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_printf.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_bidi.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/draw/sw/../../misc/lv_style_gen.h

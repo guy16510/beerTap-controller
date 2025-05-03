@@ -1,0 +1,8 @@
+adafruit/Adafruit MPU6050@^2.0.3
+adafruit/Adafruit Unified Sensor@^1.1.4
+Bodmer/TJpg_Decoder@^1.0.5
+lvgl/lvgl@8.3.11
+lovyan03/LovyanGFX@^1.2.0
+tamctec/TAMC_GT911@^1.0
+Bodmer/TFT_eSPI@^2.3.70
+https://github.com/lvgl/lv_lib_qrcode.git

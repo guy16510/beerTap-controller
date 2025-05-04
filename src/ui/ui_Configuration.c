@@ -100,10 +100,27 @@ lv_obj_set_y( ui_screenBrightnessLabelValue, -266 );
 lv_obj_set_align( ui_screenBrightnessLabelValue, LV_ALIGN_CENTER );
 lv_label_set_text(ui_screenBrightnessLabelValue,"100");
 
+ui_WiFiStatusButton = lv_btn_create(ui_Configuration);
+lv_obj_set_width( ui_WiFiStatusButton, 332);
+lv_obj_set_height( ui_WiFiStatusButton, 50);
+lv_obj_set_x( ui_WiFiStatusButton, -9 );
+lv_obj_set_y( ui_WiFiStatusButton, 168 );
+lv_obj_set_align( ui_WiFiStatusButton, LV_ALIGN_CENTER );
+lv_obj_add_flag( ui_WiFiStatusButton, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
+lv_obj_clear_flag( ui_WiFiStatusButton, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+
+ui_WiFiStatusButtonLabel = lv_label_create(ui_WiFiStatusButton);
+lv_obj_set_width( ui_WiFiStatusButtonLabel, LV_SIZE_CONTENT);  /// 1
+lv_obj_set_height( ui_WiFiStatusButtonLabel, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_align( ui_WiFiStatusButtonLabel, LV_ALIGN_CENTER );
+lv_label_set_text(ui_WiFiStatusButtonLabel,"WiFi Status");
+lv_obj_set_style_text_font(ui_WiFiStatusButtonLabel, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
+
 lv_obj_add_event_cb(ui_Label25, ui_event_Label25, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiLabelisConnected4, ui_event_wifiLabelisConnected4, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Button4, ui_event_Button4, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Button6, ui_event_Button6, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_screenBrightnessSlider, ui_event_screenBrightnessSlider, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_WiFiStatusButton, ui_event_WiFiStatusButton, LV_EVENT_ALL, NULL);
 
 }

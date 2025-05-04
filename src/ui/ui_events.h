@@ -18,6 +18,8 @@ void start_wifi_scan(lv_event_t * e);
 void on_QRCodeScreen_load(lv_event_t * e);
 void kegConfigSave(lv_event_t * e);
 void changeScreenBrightness(lv_event_t * e);
+void ui_event_wifiStatusIcon(lv_event_t * e);
+void event_wifiSpeedTestBtn(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/

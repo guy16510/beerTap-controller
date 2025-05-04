@@ -2,57 +2,14 @@
 #include "wifi_config_helper.h"
 #include "mpu6050_helper.h"
 #include "beer_pour_helper.h"
+#include "wifi_status_helper.h"
+#include "qr_code_helper.h"  // Add the new include
 #include <lvgl.h>
-#include <Arduino.h>       // for Serial
-#include "gfx_conf.h"      // extern LGFX tft
-#include <lv_qrcode.h>
-#include <qrcodegen.h>
+#include <Arduino.h>
+#include "gfx_conf.h"
 
 extern LGFX tft;
 
-//—— QR Code widget handle & generator ——//
-static lv_obj_t* ui_QRCodeCode       = nullptr;
-static lv_obj_t* ui_QRCodeBackground = nullptr;
-static void delayed_qr_code_gen(lv_timer_t* timer);
-
-void on_QRCodeScreen_load(lv_event_t* e) {
-    (void)e;
-    Serial.println("[QR Code] Screen load event triggered");
-    lv_timer_t* qr_timer = lv_timer_create(delayed_qr_code_gen, 50, NULL);
-    lv_timer_set_repeat_count(qr_timer, 1);
-}
-
-static void delayed_qr_code_gen(lv_timer_t* timer) {
-    (void)timer;
-    const char *payload = "https://example.com";
-
-    if (!ui_QRCodeContainer) return;
-
-    // Get container size, fallback to defaults
-    lv_coord_t w = lv_obj_get_width(ui_QRCodeContainer);
-    lv_coord_t h = lv_obj_get_height(ui_QRCodeContainer);
-    if (w <= 0 || h <= 0) { w = 480; h = 560; }
-
-    // Remove previous
-    if (ui_QRCodeBackground) lv_obj_del(ui_QRCodeBackground);
-    if (ui_QRCodeCode)       lv_obj_del(ui_QRCodeCode);
-
-    // Background
-    ui_QRCodeBackground = lv_obj_create(ui_QRCodeContainer);
-    lv_obj_remove_style_all(ui_QRCodeBackground);
-    lv_obj_set_size(ui_QRCodeBackground, w, h);
-    lv_obj_set_style_bg_color(ui_QRCodeBackground, lv_color_white(), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_center(ui_QRCodeBackground);
-
-    // QR code
-    ui_QRCodeCode = lv_qrcode_create(ui_QRCodeContainer, w, lv_color_black(), lv_color_white());
-    lv_obj_center(ui_QRCodeCode);
-    lv_qrcode_update(ui_QRCodeCode, payload, strlen(payload));
-
-    Serial.printf("[QR Code] Generated %dx%d QR\n", w, w);
-}
-
-//—— Wi-Fi manual scan (if you want a button) ——//
 //—— Wi-Fi manual scan (if you want a button) ——//
 void start_wifi_scan(lv_event_t* e) {
   (void)e;
@@ -71,62 +28,41 @@ void start_wifi_scan(lv_event_t* e) {
   }
 }
 
-//—— Wi-Fi screen load ——//
-void on_WiFiConfigScreen_load(lv_event_t * e) {
-  (void)e;
-  Serial.println("[WiFi] Config screen load");
-  
-  // Show spinner while loading
-  if (ui_wifiLoadingSpinner) {
-      lv_obj_clear_flag(ui_wifiLoadingSpinner, LV_OBJ_FLAG_HIDDEN);
-  }
-  
-  // Use a timer to allow UI to update before operations
-  lv_timer_t* init_timer = lv_timer_create([](lv_timer_t* timer) {
-      WiFiConfigHelper::begin();
-      
-      // Load saved credentials to UI
-      String ssid, pass;
-      if (WiFiConfigHelper::loadCredentials(ssid, pass)) {
-          if (ui_WifiNameValue) {
-              lv_label_set_text(ui_WifiNameValue, ssid.c_str());
-          }
-          if (ui_wifiPassword) {
-              lv_textarea_set_text(ui_wifiPassword, pass.c_str());
-          }
-      }
-      
-      // Scan after loading credentials
-      if (ui_wifiNetworksAvailable) {
-          WiFiConfigHelper::scanAndPopulate(ui_wifiNetworksAvailable);
-      }
-      
-      // Hide spinner when done
-      if (ui_wifiLoadingSpinner) {
-          lv_obj_add_flag(ui_wifiLoadingSpinner, LV_OBJ_FLAG_HIDDEN);
-      }
-  }, 50, NULL);
-  lv_timer_set_repeat_count(init_timer, 1);
+// WiFi Config screen load event handler
+void on_WiFiConfigScreen_load(lv_event_t* e) {
+    (void)e;
+    Serial.println("[WiFi] Config screen loaded");
+    // Add WiFi configuration screen setup code here if needed
 }
 
 //—— Hookup all events ——//
 extern "C" void ui_init_events(void) {
     Serial.println("[UI] Initializing events");
 
-    // QR screen
-    if (ui_QRCode) {
-        lv_obj_add_event_cb(ui_QRCode, on_QRCodeScreen_load, LV_EVENT_SCREEN_LOADED, nullptr);
+    // Initialize helpers
+    WiFiStatusHelper::begin();
+    WiFiStatusHelper::initEvents();
+    QRCodeHelper::begin();
+    
+    // Set the QR code container if available
+    if (ui_QRCodeContainer) {
+        QRCodeHelper::setContainer(ui_QRCodeContainer);
     }
 
-    // Wi-Fi config screen (note object name: ui_WifiConfig)
+    // QR screen
+    if (ui_QRCode) {
+        lv_obj_add_event_cb(ui_QRCode, QRCodeHelper::onScreenLoad, LV_EVENT_SCREEN_LOADED, nullptr);
+    }
+
+    // Wi-Fi config screen
     if (ui_WifiConfig) {
         lv_obj_add_event_cb(ui_WifiConfig, on_WiFiConfigScreen_load, LV_EVENT_SCREEN_LOADED, NULL);
     }
 
-    // Optional: scan button
-    // if (ui_wifiScanButton) {
-    //     lv_obj_add_event_cb(ui_wifiScanButton, start_wifi_scan, LV_EVENT_CLICKED, nullptr);
-    // }
+    // WiFi Status icon click event
+    if (ui_wifiStatusIcon) {
+        lv_obj_add_event_cb(ui_wifiStatusIcon, WiFiStatusHelper::onStatusIconClick, LV_EVENT_ALL, NULL);
+    }
 
     // Brightness slider
     if (ui_screenBrightnessSlider) {
@@ -147,8 +83,10 @@ extern "C" void ui_init_events(void) {
     lv_obj_t* pages[] = {
         ui_Loading, ui_Home, ui_WifiConfig,
         ui_QRCode, ui_BeerPouring,
-        ui_KegConfig, ui_Configuration
+        ui_KegConfig, ui_Configuration,
+        ui_WiFiStatus
     };
+    
     for (auto p : pages) {
         if (!p) continue;
         lv_obj_add_event_cb(p,
@@ -165,6 +103,10 @@ extern "C" void ui_init_events(void) {
 
 //—— SquareLine-generated stubs & other callbacks ——//
 extern "C" {
+
+void ui_event_wifiStatusIcon(lv_event_t* e) {
+    WiFiStatusHelper::onStatusIconClick(e);
+}
 
 void checkWifiStatus(lv_event_t* e) {
     (void)e;

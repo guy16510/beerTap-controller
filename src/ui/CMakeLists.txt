@@ -5,6 +5,7 @@ SET(SOURCES ui_Loading.c
     ui_BeerPouring.c
     ui_KegConfig.c
     ui_Configuration.c
+    ui_WiFiStatus.c
     ui.c
     ui_comp_hook.c
     ui_helpers.c

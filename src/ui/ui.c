@@ -132,6 +132,31 @@ void ui_event_screenBrightnessSlider( lv_event_t * e);
 lv_obj_t *ui_screenBrightnessSlider;
 lv_obj_t *ui_Label33;
 lv_obj_t *ui_screenBrightnessLabelValue;
+void ui_event_WiFiStatusButton( lv_event_t * e);
+lv_obj_t *ui_WiFiStatusButton;
+lv_obj_t *ui_WiFiStatusButtonLabel;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_WiFiStatus
+void ui_WiFiStatus_screen_init(void);
+lv_obj_t *ui_WiFiStatus;
+lv_obj_t *ui_Panel8;
+void ui_event_LabelBack( lv_event_t * e);
+lv_obj_t *ui_LabelBack;
+void ui_event_wifiStatusIcon( lv_event_t * e);
+lv_obj_t *ui_wifiStatusIcon;
+lv_obj_t *ui_wifiSignalBar;
+lv_obj_t *ui_Label11;
+lv_obj_t *ui_wifiSignalValue;
+lv_obj_t *ui_wifiIPValue;
+lv_obj_t *ui_Label12;
+lv_obj_t *ui_wifiSSIDValue;
+lv_obj_t *ui_Label13;
+void ui_event_wifiSpeedTestBtn( lv_event_t * e);
+lv_obj_t *ui_wifiSpeedTestBtn;
+lv_obj_t *ui_Label15;
+lv_obj_t *ui_wifiSpeedValue;
+lv_obj_t *ui_Label16;
 // CUSTOM VARIABLES
 
 // EVENTS
@@ -373,6 +398,40 @@ if ( event_code == LV_EVENT_RELEASED) {
 }
 }
 
+void ui_event_WiFiStatusButton( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_RELEASED) {
+      _ui_screen_change( &ui_WiFiStatus, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_WiFiStatus_screen_init);
+      _ui_screen_delete( &ui_Configuration);
+}
+}
+
+void ui_event_LabelBack( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_RELEASED) {
+      _ui_screen_change( &ui_Home, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_Home_screen_init);
+      _ui_screen_delete( &ui_KegConfig);
+}
+}
+
+void ui_event_wifiStatusIcon( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_SCREEN_LOADED) {
+      ui_event_wifiStatusIcon( e );
+}
+}
+
+void ui_event_wifiSpeedTestBtn( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_RELEASED) {
+      event_wifiSpeedTestBtn( e );
+}
+}
+
 ///////////////////// SCREENS ////////////////////
 
 void ui_init( void )
@@ -387,6 +446,7 @@ ui_QRCode_screen_init();
 ui_BeerPouring_screen_init();
 ui_KegConfig_screen_init();
 ui_Configuration_screen_init();
+ui_WiFiStatus_screen_init();
 ui____initial_actions0 = lv_obj_create(NULL);
 lv_disp_load_scr( ui_Loading);
 }

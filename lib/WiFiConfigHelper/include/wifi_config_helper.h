@@ -10,12 +10,18 @@ public:
   // Must be called once in setup()
   static void begin(const char* namespaceKey = "wifi");
 
-  // Scan and load SSIDs into the roller
+  // Non-blocking scan - only starts the scan
   static void scanAndPopulate(lv_obj_t* roller);
+  
+  // Process scan results - call this periodically
+  static void processScanResults(lv_obj_t* roller);
 
   // Attempt connection (timeoutMs default 10s)
   // Returns true on successful connection
   static bool connect(const char* ssid, const char* password, uint32_t timeoutMs = 10000);
+  
+  // Attempt to connect with saved credentials
+  static void tryAutoConnect();
 
   // Save creds into NVS
   static void saveCredentials(const char* ssid, const char* password);
@@ -35,14 +41,13 @@ public:
   // Register a status-change callback (only one supported)
   static void setStatusCallback(StatusCb cb);
 
+  // Public status flag - accessible by UI
+  static bool _isInitialized;
+  static bool _isBusy;
+
 private:
   static Preferences prefs;
   static StatusCb _statusCb;
-  static bool _isBusy;         // Flag to prevent concurrent operations
-  static bool _isInitialized;  // Track if begin() has been called
-  
-  // Helper to safely call the status callback
-  static void notifyStatusChange(bool connected);
 };
 
 #endif // WIFI_CONFIG_HELPER_H

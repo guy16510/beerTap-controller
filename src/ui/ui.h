@@ -139,6 +139,31 @@ void ui_event_screenBrightnessSlider( lv_event_t * e);
 extern lv_obj_t *ui_screenBrightnessSlider;
 extern lv_obj_t *ui_Label33;
 extern lv_obj_t *ui_screenBrightnessLabelValue;
+void ui_event_WiFiStatusButton( lv_event_t * e);
+extern lv_obj_t *ui_WiFiStatusButton;
+extern lv_obj_t *ui_WiFiStatusButtonLabel;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_WiFiStatus
+void ui_WiFiStatus_screen_init(void);
+extern lv_obj_t *ui_WiFiStatus;
+extern lv_obj_t *ui_Panel8;
+void ui_event_LabelBack( lv_event_t * e);
+extern lv_obj_t *ui_LabelBack;
+void ui_event_wifiStatusIcon( lv_event_t * e);
+extern lv_obj_t *ui_wifiStatusIcon;
+extern lv_obj_t *ui_wifiSignalBar;
+extern lv_obj_t *ui_Label11;
+extern lv_obj_t *ui_wifiSignalValue;
+extern lv_obj_t *ui_wifiIPValue;
+extern lv_obj_t *ui_Label12;
+extern lv_obj_t *ui_wifiSSIDValue;
+extern lv_obj_t *ui_Label13;
+void ui_event_wifiSpeedTestBtn( lv_event_t * e);
+extern lv_obj_t *ui_wifiSpeedTestBtn;
+extern lv_obj_t *ui_Label15;
+extern lv_obj_t *ui_wifiSpeedValue;
+extern lv_obj_t *ui_Label16;
 // CUSTOM VARIABLES
 
 // EVENTS

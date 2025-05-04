@@ -86,3 +86,7 @@ def on_QRCodeScreen_load(event_struct):
 def start_wifi_scan(event_struct):
     return
 
+
+def event_wifiSpeedTestBtn(event_struct):
+    return
+

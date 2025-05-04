@@ -148,8 +148,8 @@ extern lv_obj_t *ui_WiFiStatusButtonLabel;
 void ui_WiFiStatus_screen_init(void);
 extern lv_obj_t *ui_WiFiStatus;
 extern lv_obj_t *ui_Panel8;
-void ui_event_LabelBack( lv_event_t * e);
-extern lv_obj_t *ui_LabelBack;
+void ui_event_HomeLabel( lv_event_t * e);
+extern lv_obj_t *ui_HomeLabel;
 void ui_event_wifiStatusIcon( lv_event_t * e);
 extern lv_obj_t *ui_wifiStatusIcon;
 extern lv_obj_t *ui_wifiSignalBar;
@@ -164,6 +164,7 @@ extern lv_obj_t *ui_wifiSpeedTestBtn;
 extern lv_obj_t *ui_Label15;
 extern lv_obj_t *ui_wifiSpeedValue;
 extern lv_obj_t *ui_Label16;
+extern lv_obj_t *ui_wifiLoadingSpinner1;
 // CUSTOM VARIABLES
 
 // EVENTS

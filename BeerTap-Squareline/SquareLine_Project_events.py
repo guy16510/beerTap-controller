@@ -90,3 +90,7 @@ def start_wifi_scan(event_struct):
 def event_wifiSpeedTestBtn(event_struct):
     return
 
+
+def event_wifiStatusIcon(event_struct):
+    return
+

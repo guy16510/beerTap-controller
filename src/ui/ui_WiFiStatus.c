@@ -20,13 +20,13 @@ lv_obj_clear_flag( ui_Panel8, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_obj_set_style_bg_color(ui_Panel8, lv_color_hex(0x5E5F5F), LV_PART_MAIN | LV_STATE_DEFAULT );
 lv_obj_set_style_bg_opa(ui_Panel8, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
 
-ui_LabelBack = lv_label_create(ui_Panel8);
-lv_obj_set_width( ui_LabelBack, LV_SIZE_CONTENT);  /// 1
-lv_obj_set_height( ui_LabelBack, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_align( ui_LabelBack, LV_ALIGN_LEFT_MID );
-lv_label_set_text(ui_LabelBack,"");
-lv_obj_add_flag( ui_LabelBack, LV_OBJ_FLAG_CLICKABLE );   /// Flags
-lv_obj_set_style_text_font(ui_LabelBack, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
+ui_HomeLabel = lv_label_create(ui_Panel8);
+lv_obj_set_width( ui_HomeLabel, LV_SIZE_CONTENT);  /// 1
+lv_obj_set_height( ui_HomeLabel, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_align( ui_HomeLabel, LV_ALIGN_LEFT_MID );
+lv_label_set_text(ui_HomeLabel,"");
+lv_obj_add_flag( ui_HomeLabel, LV_OBJ_FLAG_CLICKABLE );   /// Flags
+lv_obj_set_style_text_font(ui_HomeLabel, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 ui_wifiStatusIcon = lv_label_create(ui_Panel8);
 lv_obj_set_width( ui_wifiStatusIcon, LV_SIZE_CONTENT);  /// 1
@@ -86,6 +86,7 @@ lv_obj_set_height( ui_wifiSSIDValue, LV_SIZE_CONTENT);   /// 1
 lv_obj_set_x( ui_wifiSSIDValue, 45 );
 lv_obj_set_y( ui_wifiSSIDValue, -5 );
 lv_obj_set_align( ui_wifiSSIDValue, LV_ALIGN_CENTER );
+lv_label_set_text(ui_wifiSSIDValue,"NULL");
 
 ui_Label13 = lv_label_create(ui_WiFiStatus);
 lv_obj_set_width( ui_Label13, LV_SIZE_CONTENT);  /// 1
@@ -116,6 +117,7 @@ lv_obj_set_height( ui_wifiSpeedValue, LV_SIZE_CONTENT);   /// 1
 lv_obj_set_x( ui_wifiSpeedValue, 65 );
 lv_obj_set_y( ui_wifiSpeedValue, 229 );
 lv_obj_set_align( ui_wifiSpeedValue, LV_ALIGN_CENTER );
+lv_label_set_text(ui_wifiSpeedValue,"0KB");
 
 ui_Label16 = lv_label_create(ui_WiFiStatus);
 lv_obj_set_width( ui_Label16, LV_SIZE_CONTENT);  /// 1
@@ -125,7 +127,14 @@ lv_obj_set_y( ui_Label16, 225 );
 lv_obj_set_align( ui_Label16, LV_ALIGN_CENTER );
 lv_label_set_text(ui_Label16,"Speed Value");
 
-lv_obj_add_event_cb(ui_LabelBack, ui_event_LabelBack, LV_EVENT_ALL, NULL);
+ui_wifiLoadingSpinner1 = lv_spinner_create(ui_WiFiStatus,1000,90);
+lv_obj_set_width( ui_wifiLoadingSpinner1, lv_pct(50));
+lv_obj_set_height( ui_wifiLoadingSpinner1, lv_pct(31));
+lv_obj_set_align( ui_wifiLoadingSpinner1, LV_ALIGN_CENTER );
+lv_obj_add_flag( ui_wifiLoadingSpinner1, LV_OBJ_FLAG_HIDDEN );   /// Flags
+lv_obj_clear_flag( ui_wifiLoadingSpinner1, LV_OBJ_FLAG_CLICKABLE );    /// Flags
+
+lv_obj_add_event_cb(ui_HomeLabel, ui_event_HomeLabel, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiStatusIcon, ui_event_wifiStatusIcon, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiSpeedTestBtn, ui_event_wifiSpeedTestBtn, LV_EVENT_ALL, NULL);
 

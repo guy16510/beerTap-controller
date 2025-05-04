@@ -141,8 +141,8 @@ lv_obj_t *ui_WiFiStatusButtonLabel;
 void ui_WiFiStatus_screen_init(void);
 lv_obj_t *ui_WiFiStatus;
 lv_obj_t *ui_Panel8;
-void ui_event_LabelBack( lv_event_t * e);
-lv_obj_t *ui_LabelBack;
+void ui_event_HomeLabel( lv_event_t * e);
+lv_obj_t *ui_HomeLabel;
 void ui_event_wifiStatusIcon( lv_event_t * e);
 lv_obj_t *ui_wifiStatusIcon;
 lv_obj_t *ui_wifiSignalBar;
@@ -157,6 +157,7 @@ lv_obj_t *ui_wifiSpeedTestBtn;
 lv_obj_t *ui_Label15;
 lv_obj_t *ui_wifiSpeedValue;
 lv_obj_t *ui_Label16;
+lv_obj_t *ui_wifiLoadingSpinner1;
 // CUSTOM VARIABLES
 
 // EVENTS
@@ -407,12 +408,12 @@ if ( event_code == LV_EVENT_RELEASED) {
 }
 }
 
-void ui_event_LabelBack( lv_event_t * e) {
+void ui_event_HomeLabel( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);
 
 if ( event_code == LV_EVENT_RELEASED) {
       _ui_screen_change( &ui_Home, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_Home_screen_init);
-      _ui_screen_delete( &ui_KegConfig);
+      _ui_screen_delete( &ui_WiFiStatus);
 }
 }
 
@@ -420,7 +421,7 @@ void ui_event_wifiStatusIcon( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);
 
 if ( event_code == LV_EVENT_SCREEN_LOADED) {
-      ui_event_wifiStatusIcon( e );
+      event_wifiStatusIcon( e );
 }
 }
 

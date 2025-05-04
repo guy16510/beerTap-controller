@@ -16,8 +16,8 @@ static lv_color_t disp_draw_buf2[screenWidth * screenHeight / 20]; // Reduced bu
 static lv_disp_drv_t disp_drv;
 
 // Function prototypes
-extern "C" void ui_init_events(void);
-void process_wifi_scan(); // Declared in ui_events.cpp
+// extern "C" void ui_init_events(void);
+// void process_wifi_scan(); // Declared in ui_events.cpp
 
 // Watchdog protection - task timing
 unsigned long last_button_check = 0;
@@ -87,7 +87,7 @@ void setup() {
     ui_init();
     
     // Register UI event handlers
-    ui_init_events();
+    // ui_init_events();
     
     // Hardware initialization
     if (!MPU6050Helper::begin(MPU_SDA_PIN, MPU_SCL_PIN)) {
@@ -114,7 +114,7 @@ void loop() {
     
     // Process WiFi scan results if any
     if (now - last_wifi_check > 100) { // Check WiFi every 100ms
-        process_wifi_scan();
+        // process_wifi_scan();
         
         // Try auto-connect if needed
         if (!WiFiConfigHelper::isConnected() && !WiFiConfigHelper::_isBusy) {

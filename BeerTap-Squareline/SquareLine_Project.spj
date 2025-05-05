@@ -167,7 +167,7 @@
                           1,
                           1,
                           1,
-                          255
+                          0
                         ],
                         "InheritedType": 7
                       }
@@ -457,13 +457,12 @@
                   {
                     "nid": 1001064,
                     "strtype": "CHANGE SCREEN/Fade_mode",
-                    "strval": "FADE_ON",
+                    "strval": "NONE",
                     "InheritedType": 3
                   },
                   {
                     "nid": 1001065,
                     "strtype": "CHANGE SCREEN/Speed",
-                    "integer": 1000,
                     "InheritedType": 6
                   },
                   {
@@ -8814,8 +8813,8 @@
                 "flags": 34,
                 "strtype": "OBJECT/Size",
                 "intarray": [
-                  18,
-                  70
+                  34,
+                  68
                 ],
                 "InheritedType": 7
               },
@@ -8827,6 +8826,7 @@
               },
               {
                 "nid": 90,
+                "flags": 1048576,
                 "strtype": "OBJECT/Flags",
                 "InheritedType": 1
               },
@@ -8838,6 +8838,7 @@
               },
               {
                 "nid": 225,
+                "flags": 1048576,
                 "strtype": "OBJECT/Scrolling",
                 "InheritedType": 1
               },
@@ -8906,28 +8907,8 @@
                         "nid": 10520,
                         "strtype": "_style/Bg_Color",
                         "intarray": [
-                          223,
-                          223,
-                          223,
-                          255
-                        ],
-                        "InheritedType": 7
-                      },
-                      {
-                        "nid": 10810,
-                        "strtype": "_style/Outline_Color",
-                        "intarray": [
                           0,
                           0,
-                          0,
-                          255
-                        ],
-                        "InheritedType": 7
-                      },
-                      {
-                        "nid": 10820,
-                        "strtype": "_style/Outline_params",
-                        "intarray": [
                           0,
                           0
                         ],
@@ -16125,7 +16106,7 @@
     "uiExportFolderPath": "/Users/admin/Desktop/dev/beerTap-controller/src/ui",
     "projectExportFolderPath": "/Users/admin/Desktop/dev/beerTap-controller/BeerTap-Squareline",
     "custom_variable_prefix": "uic",
-    "backup_cnt": 248,
+    "backup_cnt": 254,
     "autosave_cnt": 0,
     "group_color_cnt": 0,
     "lvgl_version": "8.3.11",

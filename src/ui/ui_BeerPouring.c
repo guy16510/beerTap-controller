@@ -67,18 +67,14 @@ lv_obj_clear_flag( ui_Image4, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 lv_img_set_zoom(ui_Image4,350);
 
 ui_beerPouringBar = lv_bar_create(ui_BeerPouring);
-lv_obj_set_width( ui_beerPouringBar, lv_pct(18));
-lv_obj_set_height( ui_beerPouringBar, lv_pct(70));
+lv_obj_set_width( ui_beerPouringBar, lv_pct(34));
+lv_obj_set_height( ui_beerPouringBar, lv_pct(68));
 lv_obj_set_x( ui_beerPouringBar, 0 );
 lv_obj_set_y( ui_beerPouringBar, 123 );
 lv_obj_set_align( ui_beerPouringBar, LV_ALIGN_CENTER );
 lv_obj_set_style_radius(ui_beerPouringBar, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_bg_color(ui_beerPouringBar, lv_color_hex(0xDFDFDF), LV_PART_MAIN | LV_STATE_DEFAULT );
-lv_obj_set_style_bg_opa(ui_beerPouringBar, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_outline_color(ui_beerPouringBar, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
-lv_obj_set_style_outline_opa(ui_beerPouringBar, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_outline_width(ui_beerPouringBar, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
-lv_obj_set_style_outline_pad(ui_beerPouringBar, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
+lv_obj_set_style_bg_color(ui_beerPouringBar, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
+lv_obj_set_style_bg_opa(ui_beerPouringBar, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 lv_obj_set_style_radius(ui_beerPouringBar, 0, LV_PART_INDICATOR| LV_STATE_DEFAULT);
 lv_obj_set_style_bg_color(ui_beerPouringBar, lv_color_hex(0x8A8D17), LV_PART_INDICATOR | LV_STATE_DEFAULT );

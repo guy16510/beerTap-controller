@@ -26,9 +26,6 @@ extern lv_obj_t *ui_Image1;
 // SCREEN: ui_Home
 void ui_Home_screen_init(void);
 extern lv_obj_t *ui_Home;
-void ui_event_Button8( lv_event_t * e);
-extern lv_obj_t *ui_Button8;
-extern lv_obj_t *ui_Label17;
 void ui_event_Button10( lv_event_t * e);
 extern lv_obj_t *ui_Button10;
 extern lv_obj_t *ui_Label19;

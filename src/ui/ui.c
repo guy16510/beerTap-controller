@@ -19,9 +19,6 @@ lv_obj_t *ui_Image1;
 // SCREEN: ui_Home
 void ui_Home_screen_init(void);
 lv_obj_t *ui_Home;
-void ui_event_Button8( lv_event_t * e);
-lv_obj_t *ui_Button8;
-lv_obj_t *ui_Label17;
 void ui_event_Button10( lv_event_t * e);
 lv_obj_t *ui_Button10;
 lv_obj_t *ui_Label19;
@@ -191,15 +188,6 @@ void ui_event_Image1( lv_event_t * e) {
 if ( event_code == LV_EVENT_CLICKED) {
       _ui_screen_change( &ui_Home, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_Home_screen_init);
       _ui_screen_delete( &ui_Loading);
-}
-}
-
-void ui_event_Button8( lv_event_t * e) {
-    lv_event_code_t event_code = lv_event_get_code(e);
-
-if ( event_code == LV_EVENT_RELEASED) {
-      _ui_screen_change( &ui_Loading, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_Loading_screen_init);
-      _ui_screen_delete( &ui_Home);
 }
 }
 

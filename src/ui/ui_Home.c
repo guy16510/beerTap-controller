@@ -10,24 +10,6 @@ void ui_Home_screen_init(void)
 ui_Home = lv_obj_create(NULL);
 lv_obj_clear_flag( ui_Home, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 
-ui_Button8 = lv_btn_create(ui_Home);
-lv_obj_set_width( ui_Button8, lv_pct(60));
-lv_obj_set_height( ui_Button8, lv_pct(10));
-lv_obj_set_y( ui_Button8, 58 );
-lv_obj_set_x( ui_Button8, lv_pct(0) );
-lv_obj_set_align( ui_Button8, LV_ALIGN_CENTER );
-lv_obj_add_flag( ui_Button8, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
-lv_obj_clear_flag( ui_Button8, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
-
-ui_Label17 = lv_label_create(ui_Home);
-lv_obj_set_width( ui_Label17, LV_SIZE_CONTENT);  /// 1
-lv_obj_set_height( ui_Label17, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_x( ui_Label17, 1 );
-lv_obj_set_y( ui_Label17, 56 );
-lv_obj_set_align( ui_Label17, LV_ALIGN_CENTER );
-lv_label_set_text(ui_Label17,"Loading");
-lv_obj_set_style_text_font(ui_Label17, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
-
 ui_Button10 = lv_btn_create(ui_Home);
 lv_obj_set_width( ui_Button10, lv_pct(60));
 lv_obj_set_height( ui_Button10, lv_pct(10));
@@ -134,7 +116,6 @@ lv_label_set_text(ui_temperatureValue,"0");
 lv_obj_set_style_text_align(ui_temperatureValue, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN| LV_STATE_DEFAULT);
 lv_obj_set_style_text_font(ui_temperatureValue, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
 
-lv_obj_add_event_cb(ui_Button8, ui_event_Button8, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Button10, ui_event_Button10, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Label14, ui_event_Label14, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiLabelisConnected6, ui_event_wifiLabelisConnected6, LV_EVENT_ALL, NULL);

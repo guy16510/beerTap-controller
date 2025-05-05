@@ -5,7 +5,11 @@
 #include <lvgl.h>
 #include <Arduino.h>
 #include "gfx_conf.h"
+#include "constants.h"
 #include <lv_qrcode.h>
+
+extern "C" void app_setBrightness(uint8_t value);
+
 
 extern LGFX tft;
 
@@ -116,9 +120,9 @@ void changeScreenBrightness(lv_event_t* e) {
         lv_label_set_text(ui_screenBrightnessLabelValue, buf);
     }
     
-    // Set brightness (map 0-100 to 0-255)
+    // Map 0-100 to 0-255 for brightness and set via main app
     uint8_t brightness = map(value, 0, 100, 2, 255); // min 2 to avoid complete blackout
-    tft.setBrightness(brightness);
+    app_setBrightness(brightness);
     
     Serial.printf("[Brightness] Set to %d%%\n", value);
 }

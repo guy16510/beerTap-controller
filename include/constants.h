@@ -1,5 +1,10 @@
 #pragma once
 
+// Screen timeout configuration
+#define SCREEN_TIMEOUT_SECONDS    10    // Seconds of inactivity before screen turns off
+#define SCREEN_DIM_BRIGHTNESS     0     // Brightness level when screen is "off" (0 = completely off)
+#define SCREEN_NORMAL_BRIGHTNESS  200   // Normal brightness level when screen is on
+
 // ─── Beer pour configuration ────────────────────────────────────────────────
 #define BEER_SECONDS_PER_PINT   10   // 1 pint every 10 seconds
 #define BEER_POUR_INPUT_PIN     4    // digital pin you use to sense POURING?

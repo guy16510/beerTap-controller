@@ -8,9 +8,6 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/Users/admin/Desktop/dev/beerTap-controller/lib/WiFiConfigHelper/include",
-                "/Users/admin/Desktop/dev/beerTap-controller/lib/WiFiConfigHelper/src",
-                "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src",
                 "/Users/admin/Desktop/dev/beerTap-controller/lib/MPU6050_Helper/include",
                 "/Users/admin/Desktop/dev/beerTap-controller/lib/MPU6050_Helper/src",
                 "/Users/admin/Desktop/dev/beerTap-controller/lib/BeerPourHelper/include",
@@ -248,6 +245,7 @@
                 "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/HTTPUpdateServer/src",
                 "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/I2S/src",
                 "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/NetBIOS/src",
+                "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src",
                 "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/RainMaker/src",
                 "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/SD_MMC/src",
                 "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/SimpleBLE/src",
@@ -262,9 +260,6 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/Users/admin/Desktop/dev/beerTap-controller/lib/WiFiConfigHelper/include",
-                    "/Users/admin/Desktop/dev/beerTap-controller/lib/WiFiConfigHelper/src",
-                    "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src",
                     "/Users/admin/Desktop/dev/beerTap-controller/lib/MPU6050_Helper/include",
                     "/Users/admin/Desktop/dev/beerTap-controller/lib/MPU6050_Helper/src",
                     "/Users/admin/Desktop/dev/beerTap-controller/lib/BeerPourHelper/include",
@@ -502,6 +497,7 @@
                     "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/HTTPUpdateServer/src",
                     "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/I2S/src",
                     "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/NetBIOS/src",
+                    "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src",
                     "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/RainMaker/src",
                     "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/SD_MMC/src",
                     "/Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/SimpleBLE/src",

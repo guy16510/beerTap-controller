@@ -45,6 +45,9 @@ lv_obj_set_height( ui_wifiSignalBar, 82);
 lv_obj_set_x( ui_wifiSignalBar, 139 );
 lv_obj_set_y( ui_wifiSignalBar, -217 );
 lv_obj_set_align( ui_wifiSignalBar, LV_ALIGN_CENTER );
+lv_obj_set_style_radius(ui_wifiSignalBar, 0, LV_PART_MAIN| LV_STATE_DEFAULT);
+
+lv_obj_set_style_radius(ui_wifiSignalBar, 5, LV_PART_INDICATOR| LV_STATE_DEFAULT);
 
 ui_Label11 = lv_label_create(ui_WiFiStatus);
 lv_obj_set_width( ui_Label11, LV_SIZE_CONTENT);  /// 1
@@ -97,10 +100,10 @@ lv_obj_set_align( ui_Label13, LV_ALIGN_CENTER );
 lv_label_set_text(ui_Label13,"SSID:");
 
 ui_wifiSpeedTestBtn = lv_btn_create(ui_WiFiStatus);
-lv_obj_set_width( ui_wifiSpeedTestBtn, 100);
+lv_obj_set_width( ui_wifiSpeedTestBtn, 267);
 lv_obj_set_height( ui_wifiSpeedTestBtn, 50);
-lv_obj_set_x( ui_wifiSpeedTestBtn, -18 );
-lv_obj_set_y( ui_wifiSpeedTestBtn, 89 );
+lv_obj_set_x( ui_wifiSpeedTestBtn, 0 );
+lv_obj_set_y( ui_wifiSpeedTestBtn, 100 );
 lv_obj_set_align( ui_wifiSpeedTestBtn, LV_ALIGN_CENTER );
 lv_obj_add_flag( ui_wifiSpeedTestBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
 lv_obj_clear_flag( ui_wifiSpeedTestBtn, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
@@ -108,8 +111,10 @@ lv_obj_clear_flag( ui_wifiSpeedTestBtn, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 ui_Label15 = lv_label_create(ui_wifiSpeedTestBtn);
 lv_obj_set_width( ui_Label15, LV_SIZE_CONTENT);  /// 1
 lv_obj_set_height( ui_Label15, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_x( ui_Label15, -1 );
+lv_obj_set_y( ui_Label15, 0 );
 lv_obj_set_align( ui_Label15, LV_ALIGN_CENTER );
-lv_label_set_text(ui_Label15,"Speed Test");
+lv_label_set_text(ui_Label15,"Run Speed Test");
 
 ui_wifiSpeedValue = lv_label_create(ui_WiFiStatus);
 lv_obj_set_width( ui_wifiSpeedValue, LV_SIZE_CONTENT);  /// 1

@@ -531,25 +531,4 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_lcd/interface/esp_lcd_panel_interface.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/driver/include/driver/i2c.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_ringbuf/include/freertos/ringbuf.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/hal/include/hal/i2c_types.h \
- lib/WiFiConfigHelper/include/wifi_config_helper.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFi.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/IPv6Address.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiType.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiSTA.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiGeneric.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_wifi/include/esp_smartconfig.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/wifi_provisioning/include/wifi_provisioning/manager.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/protocomm/include/common/protocomm.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/protocomm/include/security/protocomm_security.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/wifi_provisioning/include/wifi_provisioning/wifi_config.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiAP.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiScan.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiClient.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Client.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiServer.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Server.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiUdp.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Udp.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/cbuf.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src/Preferences.h
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/hal/include/hal/i2c_types.h

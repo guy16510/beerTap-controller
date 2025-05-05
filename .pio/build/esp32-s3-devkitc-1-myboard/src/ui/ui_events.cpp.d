@@ -235,24 +235,10 @@
  .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/extra/widgets/span/lv_span.h \
  .pio/libdeps/esp32-s3-devkitc-1-myboard/lvgl/src/extra/widgets/span/../../../lvgl.h \
  src/ui/ui_helpers.h src/ui/ui_events.h \
- lib/WiFiConfigHelper/include/wifi_config_helper.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFi.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Print.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/WString.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/pgmspace.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Printable.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/IPAddress.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/WString.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Printable.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/IPv6Address.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiType.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_wifi/include/esp_wifi_types.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_wifi/include/esp_private/esp_wifi_types_private.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_hw_support/include/esp_interface.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event_base.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiSTA.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiGeneric.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event.h \
+ lib/MPU6050_Helper/include/mpu6050_helper.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/Adafruit\ MPU6050/Adafruit_MPU6050.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Arduino.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp_arduino_version.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/FreeRTOS.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos/FreeRTOSConfig.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_common/include/esp_compiler.h \
@@ -318,55 +304,9 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/task.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/list.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos/task_snapshot.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/queue.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/task.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/semphr.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/queue.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event_base.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event_legacy.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_ip_addr.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_types.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_defaults.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_netif_glue.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_com.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/hal/include/hal/eth_types.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_mac.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_phy.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/tcpip_adapter/include/tcpip_adapter.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/tcpip_adapter/include/tcpip_adapter_types.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip_addr.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/opt.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/lwipopts.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/newlib/platform_include/sys/ioctl.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_system/include/esp_task.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos/FreeRTOSConfig.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/netif/dhcp_state.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/sntp/sntp_get_set_time.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/debug.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/arch.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/arch/cc.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/newlib/platform_include/errno.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/arch/sys_arch.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/arch/vfs_lwip.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/def.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip4_addr.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_addr.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/def.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_zone.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/include/apps/dhcpserver/dhcpserver.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_sta_list.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_wifi/include/esp_smartconfig.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/wifi_provisioning/include/wifi_provisioning/manager.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/protocomm/include/common/protocomm.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/protocomm/include/security/protocomm_security.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/wifi_provisioning/include/wifi_provisioning/wifi_config.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiAP.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiScan.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiClient.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Arduino.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp_arduino_version.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/task.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp32-hal.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_hw_support/include/esp_sleep.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/hal/include/hal/touch_sensor_types.h \
@@ -376,6 +316,7 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/soc/esp32s3/include/soc/gpio_struct.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/soc/esp32s3/include/soc/gpio_reg.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/queue.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/event_groups.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/freertos/timers.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp32-hal-log.h \
@@ -404,15 +345,60 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/stdlib_noniso.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/binary.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/WCharacter.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/WString.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/pgmspace.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Stream.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Print.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Printable.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/IPAddress.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/WString.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Printable.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Client.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Server.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Udp.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Stream.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/IPAddress.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/HardwareSerial.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/HWCDC.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event_base.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event_legacy.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_wifi/include/esp_wifi_types.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_wifi/include/esp_private/esp_wifi_types_private.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_hw_support/include/esp_interface.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_event/include/esp_event_base.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_ip_addr.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_types.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_defaults.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_netif_glue.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_com.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/hal/include/hal/eth_types.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_mac.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_eth/include/esp_eth_phy.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/tcpip_adapter/include/tcpip_adapter.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/tcpip_adapter/include/tcpip_adapter_types.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip_addr.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/opt.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/lwipopts.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/newlib/platform_include/sys/ioctl.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_system/include/esp_task.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos/FreeRTOSConfig.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/netif/dhcp_state.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/sntp/sntp_get_set_time.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/debug.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/arch.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/arch/cc.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/arch/sys_arch.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/port/esp32/include/arch/vfs_lwip.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/def.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip4_addr.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_addr.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/def.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/lwip/src/include/lwip/ip6_zone.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/lwip/include/apps/dhcpserver/dhcpserver.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_netif/include/esp_netif_sta_list.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Esp.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/spi_flash/include/esp_partition.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/spi_flash/include/esp_flash.h \
@@ -422,13 +408,17 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/spi_flash/include/esp_spi_flash_counters.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_hw_support/include/soc/esp32/spiram.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/variants/esp32s3/pins_arduino.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Client.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiServer.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Server.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiUdp.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Udp.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/cbuf.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src/Preferences.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/Adafruit\ BusIO/Adafruit_BusIO_Register.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/Adafruit\ BusIO/Adafruit_GenericDevice.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/Adafruit\ BusIO/Adafruit_I2CDevice.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Wire/src/Wire.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp32-hal.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/Adafruit\ BusIO/Adafruit_SPIDevice.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/SPI/src/SPI.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp32-hal-spi.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/Adafruit\ Unified\ Sensor/Adafruit_Sensor.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Print.h \
+ lib/BeerPourHelper/include/beer_pour_helper.h include/constants.h \
  src/gfx_conf.h \
  .pio/libdeps/esp32-s3-devkitc-1-myboard/LovyanGFX/src/LovyanGFX.hpp \
  .pio/libdeps/esp32-s3-devkitc-1-myboard/LovyanGFX/src/lgfx/v1_init.hpp \
@@ -544,4 +534,5 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/driver/include/driver/i2c.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/esp_ringbuf/include/freertos/ringbuf.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/tools/sdk/esp32s3/include/hal/include/hal/i2c_types.h \
- .pio/libdeps/esp32-s3-devkitc-1-myboard/lv_lib_qrcode/lv_qrcode.h
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lv_lib_qrcode/lv_qrcode.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/lv_lib_qrcode/qrcodegen.h

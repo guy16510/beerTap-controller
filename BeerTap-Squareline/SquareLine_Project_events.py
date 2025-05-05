@@ -94,3 +94,11 @@ def event_wifiSpeedTestBtn(event_struct):
 def event_wifiStatusIcon(event_struct):
     return
 
+
+def runWifiSpeedTest(event_struct):
+    return
+
+
+def on_WiFiConfigScreen_load(event_struct):
+    return
+

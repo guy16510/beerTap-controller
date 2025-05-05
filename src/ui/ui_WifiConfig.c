@@ -13,8 +13,8 @@ lv_obj_clear_flag( ui_WifiConfig, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
 ui_Label2 = lv_label_create(ui_WifiConfig);
 lv_obj_set_width( ui_Label2, LV_SIZE_CONTENT);  /// 1
 lv_obj_set_height( ui_Label2, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_x( ui_Label2, -121 );
-lv_obj_set_y( ui_Label2, -273 );
+lv_obj_set_x( ui_Label2, 2 );
+lv_obj_set_y( ui_Label2, -270 );
 lv_obj_set_align( ui_Label2, LV_ALIGN_CENTER );
 lv_label_set_text(ui_Label2,"Networks Available");
 lv_obj_set_style_text_font(ui_Label2, &lv_font_montserrat_22, LV_PART_MAIN| LV_STATE_DEFAULT);
@@ -48,9 +48,9 @@ lv_obj_set_style_text_font(ui_wifiLabelisConnected3, &lv_font_montserrat_40, LV_
 
 ui_wifiNetworksAvailable = lv_roller_create(ui_WifiConfig);
 lv_obj_set_width( ui_wifiNetworksAvailable, lv_pct(85));
-lv_obj_set_height( ui_wifiNetworksAvailable, lv_pct(13));
-lv_obj_set_x( ui_wifiNetworksAvailable, 0 );
-lv_obj_set_y( ui_wifiNetworksAvailable, -162 );
+lv_obj_set_height( ui_wifiNetworksAvailable, lv_pct(17));
+lv_obj_set_x( ui_wifiNetworksAvailable, 1 );
+lv_obj_set_y( ui_wifiNetworksAvailable, -175 );
 lv_obj_set_align( ui_wifiNetworksAvailable, LV_ALIGN_CENTER );
 
 ui_WifiNameLabel = lv_label_create(ui_WifiConfig);
@@ -152,24 +152,6 @@ lv_obj_set_align( ui_wifiLoadingSpinner, LV_ALIGN_CENTER );
 lv_obj_add_flag( ui_wifiLoadingSpinner, LV_OBJ_FLAG_HIDDEN );   /// Flags
 lv_obj_clear_flag( ui_wifiLoadingSpinner, LV_OBJ_FLAG_CLICKABLE );    /// Flags
 
-ui_wifiScanButton = lv_btn_create(ui_WifiConfig);
-lv_obj_set_width( ui_wifiScanButton, 220);
-lv_obj_set_height( ui_wifiScanButton, 50);
-lv_obj_set_x( ui_wifiScanButton, 114 );
-lv_obj_set_y( ui_wifiScanButton, -276 );
-lv_obj_set_align( ui_wifiScanButton, LV_ALIGN_CENTER );
-lv_obj_add_flag( ui_wifiScanButton, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
-lv_obj_clear_flag( ui_wifiScanButton, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
-
-ui_Label34 = lv_label_create(ui_wifiScanButton);
-lv_obj_set_width( ui_Label34, LV_SIZE_CONTENT);  /// 1
-lv_obj_set_height( ui_Label34, LV_SIZE_CONTENT);   /// 1
-lv_obj_set_x( ui_Label34, 6 );
-lv_obj_set_y( ui_Label34, 1 );
-lv_obj_set_align( ui_Label34, LV_ALIGN_CENTER );
-lv_label_set_text(ui_Label34,"Scan WiFi");
-lv_obj_set_style_text_font(ui_Label34, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
-
 lv_obj_add_event_cb(ui_wifiLabelisConnected3, ui_event_wifiLabelisConnected3, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiNetworksAvailable, ui_event_wifiNetworksAvailable, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiPassword, ui_event_wifiPassword, LV_EVENT_ALL, NULL);
@@ -177,6 +159,6 @@ lv_obj_add_event_cb(ui_Button1, ui_event_Button1, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Button2, ui_event_Button2, LV_EVENT_ALL, NULL);
 lv_keyboard_set_textarea(ui_wifiKeyboard,ui_wifiPassword);
 lv_obj_add_event_cb(ui_Button9, ui_event_Button9, LV_EVENT_ALL, NULL);
-lv_obj_add_event_cb(ui_wifiScanButton, ui_event_wifiScanButton, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_WifiConfig, ui_event_WifiConfig, LV_EVENT_ALL, NULL);
 
 }

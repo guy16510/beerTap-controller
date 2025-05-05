@@ -44,6 +44,7 @@ extern lv_obj_t *ui_temperatureValue;
 
 // SCREEN: ui_WifiConfig
 void ui_WifiConfig_screen_init(void);
+void ui_event_WifiConfig( lv_event_t * e);
 extern lv_obj_t *ui_WifiConfig;
 extern lv_obj_t *ui_Label2;
 extern lv_obj_t *ui_Panel1;
@@ -68,9 +69,6 @@ extern lv_obj_t *ui_Button9;
 extern lv_obj_t *ui_Label32;
 extern lv_obj_t *ui_WifiNameValue;
 extern lv_obj_t *ui_wifiLoadingSpinner;
-void ui_event_wifiScanButton( lv_event_t * e);
-extern lv_obj_t *ui_wifiScanButton;
-extern lv_obj_t *ui_Label34;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_QRCode
@@ -147,21 +145,22 @@ extern lv_obj_t *ui_WiFiStatus;
 extern lv_obj_t *ui_Panel8;
 void ui_event_HomeLabel( lv_event_t * e);
 extern lv_obj_t *ui_HomeLabel;
-void ui_event_wifiStatusIcon( lv_event_t * e);
 extern lv_obj_t *ui_wifiStatusIcon;
 extern lv_obj_t *ui_wifiSignalBar;
 extern lv_obj_t *ui_Label11;
 extern lv_obj_t *ui_wifiSignalValue;
-extern lv_obj_t *ui_wifiIPValue;
+extern lv_obj_t *ui_wifiIPLabel;
 extern lv_obj_t *ui_Label12;
 extern lv_obj_t *ui_wifiSSIDValue;
 extern lv_obj_t *ui_Label13;
-void ui_event_wifiSpeedTestBtn( lv_event_t * e);
-extern lv_obj_t *ui_wifiSpeedTestBtn;
+void ui_event_wifiSpeedTestButton( lv_event_t * e);
+extern lv_obj_t *ui_wifiSpeedTestButton;
 extern lv_obj_t *ui_Label15;
-extern lv_obj_t *ui_wifiSpeedValue;
+extern lv_obj_t *ui_wifiSpeedLabel;
 extern lv_obj_t *ui_Label16;
 extern lv_obj_t *ui_wifiLoadingSpinner1;
+extern lv_obj_t *ui_wifiStatusSSID;
+extern lv_obj_t *ui_wifiStatusSignal;
 // CUSTOM VARIABLES
 
 // EVENTS

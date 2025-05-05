@@ -11,15 +11,14 @@ extern "C" {
 #endif
 
 void checkWifiStatus(lv_event_t * e);
+void on_WiFiConfigScreen_load(lv_event_t * e);
 void selectedWifiSSID(lv_event_t * e);
 void saveWifiConfiguration(lv_event_t * e);
 void deleteWiFiConfig(lv_event_t * e);
-void start_wifi_scan(lv_event_t * e);
 void on_QRCodeScreen_load(lv_event_t * e);
 void kegConfigSave(lv_event_t * e);
 void changeScreenBrightness(lv_event_t * e);
-void event_wifiStatusIcon(lv_event_t * e);
-void event_wifiSpeedTestBtn(lv_event_t * e);
+void runWifiSpeedTest(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/

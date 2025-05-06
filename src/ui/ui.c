@@ -33,6 +33,9 @@ lv_obj_t *ui_Label29;
 lv_obj_t *ui_zAxisValue;
 lv_obj_t *ui_Label31;
 lv_obj_t *ui_temperatureValue;
+lv_obj_t *ui_Button3;
+void ui_event_Label1( lv_event_t * e);
+lv_obj_t *ui_Label1;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_WifiConfig
@@ -156,6 +159,12 @@ lv_obj_t *ui_wifiStatusSSID;
 lv_obj_t *ui_wifiStatusSignal;
 // CUSTOM VARIABLES
 
+// SCREEN: ui_videoAnimation
+void ui_videoAnimation_screen_init(void);
+lv_obj_t *ui_videoAnimation;
+lv_obj_t *ui_videoContainer;
+// CUSTOM VARIABLES
+
 // EVENTS
 lv_obj_t *ui____initial_actions0;
 
@@ -213,6 +222,15 @@ void ui_event_wifiLabelisConnected6( lv_event_t * e) {
 
 if ( event_code == LV_EVENT_SCREEN_LOADED) {
       checkWifiStatus( e );
+}
+}
+
+void ui_event_Label1( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_RELEASED) {
+      _ui_screen_change( &ui_videoAnimation, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_videoAnimation_screen_init);
+      _ui_screen_delete( &ui_Home);
 }
 }
 
@@ -427,6 +445,7 @@ ui_BeerPouring_screen_init();
 ui_KegConfig_screen_init();
 ui_Configuration_screen_init();
 ui_WiFiStatus_screen_init();
+ui_videoAnimation_screen_init();
 ui____initial_actions0 = lv_obj_create(NULL);
 lv_disp_load_scr( ui_Loading);
 }

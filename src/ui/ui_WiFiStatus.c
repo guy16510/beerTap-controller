@@ -38,7 +38,7 @@ lv_label_set_text(ui_wifiStatusIcon,"");
 lv_obj_set_style_text_font(ui_wifiStatusIcon, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
 
 ui_wifiSignalBar = lv_bar_create(ui_WiFiStatus);
-lv_bar_set_value(ui_wifiSignalBar,25,LV_ANIM_OFF);
+lv_bar_set_value(ui_wifiSignalBar,10,LV_ANIM_OFF);
 lv_bar_set_start_value(ui_wifiSignalBar, 0, LV_ANIM_OFF);
 lv_obj_set_width( ui_wifiSignalBar, 150);
 lv_obj_set_height( ui_wifiSignalBar, 82);

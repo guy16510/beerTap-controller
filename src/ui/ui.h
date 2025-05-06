@@ -40,6 +40,9 @@ extern lv_obj_t *ui_Label29;
 extern lv_obj_t *ui_zAxisValue;
 extern lv_obj_t *ui_Label31;
 extern lv_obj_t *ui_temperatureValue;
+extern lv_obj_t *ui_Button3;
+void ui_event_Label1( lv_event_t * e);
+extern lv_obj_t *ui_Label1;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_WifiConfig
@@ -161,6 +164,12 @@ extern lv_obj_t *ui_Label16;
 extern lv_obj_t *ui_wifiLoadingSpinner1;
 extern lv_obj_t *ui_wifiStatusSSID;
 extern lv_obj_t *ui_wifiStatusSignal;
+// CUSTOM VARIABLES
+
+// SCREEN: ui_videoAnimation
+void ui_videoAnimation_screen_init(void);
+extern lv_obj_t *ui_videoAnimation;
+extern lv_obj_t *ui_videoContainer;
 // CUSTOM VARIABLES
 
 // EVENTS

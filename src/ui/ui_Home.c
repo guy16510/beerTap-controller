@@ -116,8 +116,24 @@ lv_label_set_text(ui_temperatureValue,"0");
 lv_obj_set_style_text_align(ui_temperatureValue, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN| LV_STATE_DEFAULT);
 lv_obj_set_style_text_font(ui_temperatureValue, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
 
+ui_Button3 = lv_btn_create(ui_Home);
+lv_obj_set_width( ui_Button3, 295);
+lv_obj_set_height( ui_Button3, 50);
+lv_obj_set_x( ui_Button3, 5 );
+lv_obj_set_y( ui_Button3, 36 );
+lv_obj_set_align( ui_Button3, LV_ALIGN_CENTER );
+lv_obj_add_flag( ui_Button3, LV_OBJ_FLAG_SCROLL_ON_FOCUS );   /// Flags
+lv_obj_clear_flag( ui_Button3, LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+
+ui_Label1 = lv_label_create(ui_Button3);
+lv_obj_set_width( ui_Label1, LV_SIZE_CONTENT);  /// 1
+lv_obj_set_height( ui_Label1, LV_SIZE_CONTENT);   /// 1
+lv_obj_set_align( ui_Label1, LV_ALIGN_CENTER );
+lv_label_set_text(ui_Label1,"Video Animation");
+
 lv_obj_add_event_cb(ui_Button10, ui_event_Button10, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_Label14, ui_event_Label14, LV_EVENT_ALL, NULL);
 lv_obj_add_event_cb(ui_wifiLabelisConnected6, ui_event_wifiLabelisConnected6, LV_EVENT_ALL, NULL);
+lv_obj_add_event_cb(ui_Label1, ui_event_Label1, LV_EVENT_ALL, NULL);
 
 }

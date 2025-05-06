@@ -13509,7 +13509,7 @@
               {
                 "nid": 1030,
                 "strtype": "BAR/Value",
-                "integer": 25,
+                "integer": 10,
                 "InheritedType": 6
               },
               {
@@ -15650,7 +15650,7 @@
     "uiExportFolderPath": "/Users/admin/Desktop/dev/beerTap-controller/src/ui",
     "projectExportFolderPath": "/Users/admin/Desktop/dev/beerTap-controller/BeerTap-Squareline",
     "custom_variable_prefix": "uic",
-    "backup_cnt": 268,
+    "backup_cnt": 270,
     "autosave_cnt": 0,
     "group_color_cnt": 0,
     "lvgl_version": "8.3.11",
@@ -15667,7 +15667,7 @@
     "drive_fatfs_path": "",
     "naming": "Name",
     "naming_force_lowercase": false,
-    "nidcnt": 1001223,
+    "nidcnt": 1001234,
     "BitDepth": 16,
     "Name": "SquareLine_Project"
   }

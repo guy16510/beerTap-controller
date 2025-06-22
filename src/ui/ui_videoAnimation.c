@@ -14,7 +14,9 @@ ui_videoContainer = lv_obj_create(ui_videoAnimation);
 lv_obj_remove_style_all(ui_videoContainer);
 lv_obj_set_width( ui_videoContainer, lv_pct(100));
 lv_obj_set_height( ui_videoContainer, lv_pct(100));
-lv_obj_set_align( ui_videoContainer, LV_ALIGN_CENTER );
-lv_obj_clear_flag( ui_videoContainer, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+    lv_obj_set_align( ui_videoContainer, LV_ALIGN_CENTER );
+    lv_obj_clear_flag( ui_videoContainer, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE );    /// Flags
+
+    lv_obj_add_event_cb(ui_videoAnimation, ui_event_videoAnimation, LV_EVENT_ALL, NULL);
 
 }

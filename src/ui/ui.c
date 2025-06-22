@@ -163,6 +163,7 @@ lv_obj_t *ui_wifiStatusSignal;
 void ui_videoAnimation_screen_init(void);
 lv_obj_t *ui_videoAnimation;
 lv_obj_t *ui_videoContainer;
+void ui_event_videoAnimation(lv_event_t * e);
 // CUSTOM VARIABLES
 
 // EVENTS
@@ -427,6 +428,14 @@ void ui_event_wifiSpeedTestButton( lv_event_t * e) {
 
 if ( event_code == LV_EVENT_RELEASED) {
       runWifiSpeedTest( e );
+}
+}
+
+void ui_event_videoAnimation( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_SCREEN_LOADED) {
+      on_VideoAnimation_load( e );
 }
 }
 

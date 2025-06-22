@@ -170,6 +170,7 @@ extern lv_obj_t *ui_wifiStatusSignal;
 void ui_videoAnimation_screen_init(void);
 extern lv_obj_t *ui_videoAnimation;
 extern lv_obj_t *ui_videoContainer;
+void ui_event_videoAnimation( lv_event_t * e);
 // CUSTOM VARIABLES
 
 // EVENTS

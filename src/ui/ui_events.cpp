@@ -2,6 +2,7 @@
 #include "ui.h"
 #include "brightness_manager.h"
 #include "wifi_config_helper.h"
+#include "video_player.h"
 #include <Arduino.h>
 #include <lvgl.h>
 
@@ -256,6 +257,12 @@ void runWifiSpeedTest(lv_event_t* e) {
         }
     }, 50, NULL);
     lv_timer_set_repeat_count(test_timer, 1);
+}
+
+// Start video playback when the animation screen loads
+void on_VideoAnimation_load(lv_event_t* e) {
+    (void)e;
+    VideoPlayer::play("/pour_bak.gif", ui_videoContainer);
 }
 
 // Optional: QR code generation for WiFi credentials

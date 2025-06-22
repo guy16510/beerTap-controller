@@ -12,6 +12,7 @@
 #include "beer_state_manager.h"
 #include "brightness_manager.h"
 #include "display_driver.h"
+#include "video_player.h"
 
 // Display instance
 LGFX tft;
@@ -64,6 +65,9 @@ void setup() {
 
     // Initialize display and LVGL
     DisplayDriver::init();
+
+    // Initialize video player (mount SD card)
+    VideoPlayer::init();
     
     // Initialize UI
     ui_init();

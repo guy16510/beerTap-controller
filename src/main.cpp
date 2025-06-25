@@ -10,6 +10,7 @@
 #include "constants.h"
 #include "bh1750_helper.h"
 #include "max17043_helper.h"
+#include "ui/ui_events.h"
 #include "wifi_config_helper.h"
 #include "beer_state_manager.h"
 #include "brightness_manager.h"
@@ -140,8 +141,6 @@ void loop() {
     static unsigned long lastSensorUpdate = 0;
     if (millis() - lastSensorUpdate > 2000) {
         lastSensorUpdate = millis();
-        BH1750Helper::readLux();
-        MAX17043Helper::getVoltage();
-        MAX17043Helper::getPercentage();
+        updateBatteryLuxDisplay();
     }
 }

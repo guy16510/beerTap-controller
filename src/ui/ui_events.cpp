@@ -2,6 +2,8 @@
 #include "ui.h"
 #include "brightness_manager.h"
 #include "wifi_config_helper.h"
+#include "bh1750_helper.h"
+#include "max17043_helper.h"
 #include <Arduino.h>
 #include <lvgl.h>
 
@@ -304,6 +306,24 @@ void changeScreenBrightness(lv_event_t* e) {
         char buf[8];
         snprintf(buf, sizeof(buf), "%d", v);
         lv_label_set_text(ui_screenBrightnessLabelValue, buf);
+    }
+}
+
+void updateBatteryLuxDisplay() {
+    float lux = BH1750Helper::readLux();
+    float voltage = MAX17043Helper::getVoltage();
+    float percentage = MAX17043Helper::getPercentage();
+
+    if (ui_luxData) {
+        char buf[16];
+        snprintf(buf, sizeof(buf), "%.1f", lux);
+        lv_label_set_text(ui_luxData, buf);
+    }
+
+    if (ui_batteryData) {
+        char buf[32];
+        snprintf(buf, sizeof(buf), "%.2fV %.0f%%", voltage, percentage);
+        lv_label_set_text(ui_batteryData, buf);
     }
 }
 

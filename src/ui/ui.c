@@ -165,6 +165,15 @@ lv_obj_t *ui_videoAnimation;
 lv_obj_t *ui_videoContainer;
 // CUSTOM VARIABLES
 
+// SCREEN: ui_BatteryLux
+void ui_BatteryLux_screen_init(void);
+lv_obj_t *ui_BatteryLux;
+lv_obj_t *ui_batteryData;
+lv_obj_t *ui_batteryLabel;
+lv_obj_t *ui_LuxLabel;
+lv_obj_t *ui_luxData;
+// CUSTOM VARIABLES
+
 // EVENTS
 lv_obj_t *ui____initial_actions0;
 
@@ -446,6 +455,7 @@ ui_KegConfig_screen_init();
 ui_Configuration_screen_init();
 ui_WiFiStatus_screen_init();
 ui_videoAnimation_screen_init();
+ui_BatteryLux_screen_init();
 ui____initial_actions0 = lv_obj_create(NULL);
 lv_disp_load_scr( ui_Loading);
 }

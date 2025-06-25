@@ -8,6 +8,8 @@
 #include "ui/ui.h"
 #include "gfx_conf.h"
 #include "constants.h"
+#include "bh1750_helper.h"
+#include "max17043_helper.h"
 #include "wifi_config_helper.h"
 #include "beer_state_manager.h"
 #include "brightness_manager.h"
@@ -73,6 +75,8 @@ void setup() {
     BeerPourHelper::begin();
     BeerStateManager::init();
     BrightnessManager::init();
+    BH1750Helper::begin(MPU_SDA_PIN, MPU_SCL_PIN);
+    MAX17043Helper::begin(MPU_SDA_PIN, MPU_SCL_PIN);
     
     // Initialize WiFi after UI is ready
     WiFiConfigHelper::begin("wifi");
@@ -130,6 +134,14 @@ void loop() {
             WiFiConfigHelper::updateStatusIcons(ui_wifiLabelisConnected6);
         }
         // Add other screens as needed
-        
+
+    }
+
+    static unsigned long lastSensorUpdate = 0;
+    if (millis() - lastSensorUpdate > 2000) {
+        lastSensorUpdate = millis();
+        BH1750Helper::readLux();
+        MAX17043Helper::getVoltage();
+        MAX17043Helper::getPercentage();
     }
 }

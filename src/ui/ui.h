@@ -172,6 +172,15 @@ extern lv_obj_t *ui_videoAnimation;
 extern lv_obj_t *ui_videoContainer;
 // CUSTOM VARIABLES
 
+// SCREEN: ui_BatteryLux
+void ui_BatteryLux_screen_init(void);
+extern lv_obj_t *ui_BatteryLux;
+extern lv_obj_t *ui_batteryData;
+extern lv_obj_t *ui_batteryLabel;
+extern lv_obj_t *ui_LuxLabel;
+extern lv_obj_t *ui_luxData;
+// CUSTOM VARIABLES
+
 // EVENTS
 extern lv_obj_t *ui____initial_actions0;
 

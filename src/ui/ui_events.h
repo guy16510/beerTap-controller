@@ -19,7 +19,7 @@ void on_QRCodeScreen_load(lv_event_t * e);
 void kegConfigSave(lv_event_t * e);
 void changeScreenBrightness(lv_event_t * e);
 void runWifiSpeedTest(lv_event_t * e);
-void updateBatteryLuxDisplay();
+void updateBatteryLuxDisplay(lv_event_t * e);
 
 #ifdef __cplusplus
 } /*extern "C"*/

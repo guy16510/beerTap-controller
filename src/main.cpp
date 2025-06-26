@@ -141,6 +141,6 @@ void loop() {
     static unsigned long lastSensorUpdate = 0;
     if (millis() - lastSensorUpdate > 2000) {
         lastSensorUpdate = millis();
-        updateBatteryLuxDisplay();
+        updateBatteryLuxDisplay(millis());
     }
 }

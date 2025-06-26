@@ -140,6 +140,8 @@ extern lv_obj_t *ui_screenBrightnessLabelValue;
 void ui_event_WiFiStatusButton( lv_event_t * e);
 extern lv_obj_t *ui_WiFiStatusButton;
 extern lv_obj_t *ui_WiFiStatusButtonLabel;
+void ui_event_BatteryButton( lv_event_t * e);
+extern lv_obj_t *ui_BatteryButton;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_WiFiStatus
@@ -174,6 +176,7 @@ extern lv_obj_t *ui_videoContainer;
 
 // SCREEN: ui_BatteryLux
 void ui_BatteryLux_screen_init(void);
+void ui_event_BatteryLux( lv_event_t * e);
 extern lv_obj_t *ui_BatteryLux;
 extern lv_obj_t *ui_batteryData;
 extern lv_obj_t *ui_batteryLabel;

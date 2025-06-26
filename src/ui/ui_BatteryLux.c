@@ -45,4 +45,6 @@ lv_obj_set_align( ui_luxData, LV_ALIGN_CENTER );
 lv_label_set_text(ui_luxData,"0");
 lv_obj_set_style_text_font(ui_luxData, &lv_font_montserrat_40, LV_PART_MAIN| LV_STATE_DEFAULT);
 
+lv_obj_add_event_cb(ui_BatteryLux, ui_event_BatteryLux, LV_EVENT_ALL, NULL);
+
 }

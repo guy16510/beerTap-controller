@@ -133,6 +133,8 @@ lv_obj_t *ui_screenBrightnessLabelValue;
 void ui_event_WiFiStatusButton( lv_event_t * e);
 lv_obj_t *ui_WiFiStatusButton;
 lv_obj_t *ui_WiFiStatusButtonLabel;
+void ui_event_BatteryButton( lv_event_t * e);
+lv_obj_t *ui_BatteryButton;
 // CUSTOM VARIABLES
 
 // SCREEN: ui_WiFiStatus
@@ -167,6 +169,7 @@ lv_obj_t *ui_videoContainer;
 
 // SCREEN: ui_BatteryLux
 void ui_BatteryLux_screen_init(void);
+void ui_event_BatteryLux( lv_event_t * e);
 lv_obj_t *ui_BatteryLux;
 lv_obj_t *ui_batteryData;
 lv_obj_t *ui_batteryLabel;
@@ -422,6 +425,15 @@ if ( event_code == LV_EVENT_RELEASED) {
 }
 }
 
+void ui_event_BatteryButton( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_CLICKED) {
+      _ui_screen_change( &ui_BatteryLux, LV_SCR_LOAD_ANIM_NONE, 0, 0, &ui_BatteryLux_screen_init);
+      _ui_screen_delete( &ui_Configuration);
+}
+}
+
 void ui_event_HomeLabel( lv_event_t * e) {
     lv_event_code_t event_code = lv_event_get_code(e);
 
@@ -436,6 +448,14 @@ void ui_event_wifiSpeedTestButton( lv_event_t * e) {
 
 if ( event_code == LV_EVENT_RELEASED) {
       runWifiSpeedTest( e );
+}
+}
+
+void ui_event_BatteryLux( lv_event_t * e) {
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+if ( event_code == LV_EVENT_SCREEN_LOADED) {
+      updateBatteryLuxDisplay( e );
 }
 }
 

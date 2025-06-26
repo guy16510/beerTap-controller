@@ -427,4 +427,9 @@
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/WiFi/src/WiFiUdp.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/Udp.h \
  /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/cbuf.h \
- /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src/Preferences.h
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Preferences/src/Preferences.h \
+ lib/BH1750_Helper/include/bh1750_helper.h \
+ .pio/libdeps/esp32-s3-devkitc-1-myboard/BH1750/src/BH1750.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/libraries/Wire/src/Wire.h \
+ /Users/admin/.platformio/packages/framework-arduinoespressif32@src-87ac2a9d947aea8f7d6ce292db8f4c47/cores/esp32/esp32-hal.h \
+ lib/MAX17043_Helper/include/max17043_helper.h
